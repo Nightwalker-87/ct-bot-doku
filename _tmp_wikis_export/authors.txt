@@ -1,0 +1,55 @@
+AVRToolchain.md: Timo Sandmann, CC BY-SA 4.0
+AVRToolchainInterna.md: Timo Sandmann, CC BY-SA 4.0
+AntMiniHowto.md: Hendrik Krauß (Heise), CC BY-SA 4.0
+AppletHowto.md: Hendrik Krauß (Heise), CC BY-SA 4.0
+Artikelliste.md: Timo Sandmann, CC BY-SA 4.0
+Coderichtlinien.md: Benjamin Benz (Heise), CC BY-SA 4.0
+DokuBot2Bot.md: Timo Sandmann, CC BY-SA 4.0
+DokuDriveArea.md: Frank Menzel, bisher keine Lizenzfreigabe
+DokuLineShortestWay.md: Frank Menzel, bisher keine Lizenzfreigabe
+DokuOS.md: Timo Sandmann, CC BY-SA 4.0
+DokuPathplaning.md: Frank Menzel, bisher keine Lizenzfreigabe
+DokuProtocol.md: Hendrik Krauß (Heise), CC BY-SA 4.0
+DokuScriptLanguages.md: Timo Sandmann, CC BY-SA 4.0
+DokuSimulationsArchitektur.md: Hendrik Krauß (Heise), CC BY-SA 4.0
+EclipseInstallation.md: Timo Sandmann, CC BY-SA 4.0
+EclipseTipps.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen von Timo Sandmann
+FirstSteps.md: Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0
+Flash.md: Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0; Ergänzungen von anonybot
+GITUndEclipse.md: Timo Sandmann, CC BY-SA 4.0
+Galerie.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen von Torsten Evers, Morphi2k1 und Timo Sandmann
+HWErweiterungen.md: Timo Sandmann, CC BY-SA 4.0
+Historie.md: Benjamin Benz (Heise), Hendrik Krauß (Heise) und Timo Sandmann, CC BY-SA 4.0
+InstallationsanleitungR23.md: Timo Sandmann, CC BY-SA 4.0
+Links.md: Benjamin Benz (Heise), CC BY-SA 4.0
+Localization.md: Timo Sandmann, CC BY-SA 4.0
+Logging.md: Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0
+NeueVerhalten.md: Benjamin Benz (Heise), Hendrik Krauß (Heise), Torsten Evers und Timo Sandmann, CC BY-SA 4.0
+RaspberryPi.md: Timo Sandmann, CC BY-SA 4.0
+RemoteCall.md: Timo Sandmann, CC BY-SA 4.0
+SimConfig.md: Timo Sandmann, CC BY-SA 4.0
+USB2Bot.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen/Updates von anonybot, Timo Sandmann und starkm
+Utils.md: Timo Sandmann, CC BY-SA 4.0
+Verhalten.md: Timo Sandmann, CC BY-SA 4.0
+WikiStart.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen/Updates von Michael Frey, Hendrik Krauß (Heise) und Timo Sandmann
+ct-Bot-Aufbau.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen von anonybot
+ct-Bot-Erweiterung.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen und Korrekturen von anonybot
+ct-Bot-Hardware.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen und Korrekturen von anonybot, Michael Frey und Timo Sandmann
+ct-Bot-Modifikationen.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen von anonybot
+ct-Bot-Software-Aktuatoren.md: Benjamin Benz (Heise), CC BY-SA 4.0
+ct-Bot-Software-Sensoren.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen von anonybot und Timo Sandmann
+ct-Bot-Software.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen von anonybot und Timo Sandmann
+ct-Sim.md: Benjamin Benz (Heise), CC BY-SA 4.0
+ctBotH.md: Timo Sandmann, CC BY-SA 4.0
+deprecated/BeagleBoard.md: Timo Sandmann, CC BY-SA 4.0
+deprecated/BeagleBoardUbuntu1204Install.md: Timo Sandmann, CC BY-SA 4.0
+deprecated/DokuBotFs.md: Timo Sandmann, CC BY-SA 4.0; Ergänzungen von anonybot
+deprecated/DokuEepromEmu.md: Achim Pankalla, bisher keine Lizenzfreigabe
+deprecated/DokuMmcVm.md: Timo Sandmann, CC BY-SA 4.0
+deprecated/Installationsanleitung.md: Hendrik Krauß (Heise), Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0
+deprecated/Patches.md: Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0
+
+nicht MD-konvertiert:
+EclipseAlt: Hendrik Krauß (Heise), CC BY-SA 4.0
+SVNUndEclipse: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen/Updates von Michael Frey, Hendrik Krauß (Heise) und Timo Sandmann
+TracUndEclipsePaaren: Hendrik Krauß (Heise), CC BY-SA 4.0

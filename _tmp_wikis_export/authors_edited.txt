@@ -1,0 +1,64 @@
+Zuordnung der (noch) verbleibenden alten Trac-Inhalte zu Autoren und daraus abgeleitet die Lizenz:
+
+=====
+
+AVRToolchain.md: Timo Sandmann, CC BY-SA 4.0
+AVRToolchainInterna.md: Timo Sandmann, CC BY-SA 4.0
+AntMiniHowto.md: Hendrik Krauß (Heise), CC BY-SA 4.0
+AppletHowto.md: Hendrik Krauß (Heise), CC BY-SA 4.0
+
+
+DokuBot2Bot.md: Timo Sandmann, CC BY-SA 4.0
+DokuDriveArea.md: Frank Menzel, bisher keine Lizenzfreigabe
+DokuLineShortestWay.md: Frank Menzel, bisher keine Lizenzfreigabe
+DokuOS.md: Timo Sandmann, CC BY-SA 4.0
+DokuPathplaning.md: Frank Menzel, bisher keine Lizenzfreigabe
+DokuProtocol.md: Hendrik Krauß (Heise), CC BY-SA 4.0
+DokuScriptLanguages.md: Timo Sandmann, CC BY-SA 4.0
+DokuSimulationsArchitektur.md: Hendrik Krauß (Heise), CC BY-SA 4.0
+EclipseInstallation.md: Timo Sandmann, CC BY-SA 4.0
+EclipseTipps.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen von Timo Sandmann
+
+Flash.md: Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0; Ergänzungen von anonybot
+GITUndEclipse.md: Timo Sandmann, CC BY-SA 4.0
+
+
+
+InstallationsanleitungR23.md: Timo Sandmann, CC BY-SA 4.0
+
+Localization.md: Timo Sandmann, CC BY-SA 4.0
+
+NeueVerhalten.md: Benjamin Benz (Heise), Hendrik Krauß (Heise), Torsten Evers und Timo Sandmann, CC BY-SA 4.0
+RaspberryPi.md: Timo Sandmann, CC BY-SA 4.0
+RemoteCall.md: Timo Sandmann, CC BY-SA 4.0
+SimConfig.md: Timo Sandmann, CC BY-SA 4.0
+
+Utils.md: Timo Sandmann, CC BY-SA 4.0
+Verhalten.md: Timo Sandmann, CC BY-SA 4.0
+
+
+
+
+ct-Bot-Modifikationen.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen von anonybot
+ct-Bot-Software-Aktuatoren.md: Benjamin Benz (Heise), CC BY-SA 4.0
+ct-Bot-Software-Sensoren.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen von anonybot und Timo Sandmann
+ct-Bot-Software.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen von anonybot und Timo Sandmann
+
+
+
+
+deprecated/DokuBotFs.md: Timo Sandmann, CC BY-SA 4.0; Ergänzungen von anonybot
+deprecated/DokuEepromEmu.md: Achim Pankalla, bisher keine Lizenzfreigabe
+
+deprecated/Installationsanleitung.md: Hendrik Krauß (Heise), Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0
+deprecated/Patches.md: Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0
+
+=====
+
+<<< teilweise in readme.md eingegliedert >> ct-Bot-Hardware.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen und Korrekturen von anonybot, Michael Frey und Timo Sandmann
+<<< nur Verlinkungen, entfällt >>> FirstSteps.md: Benjamin Benz (Heise) und Timo Sandmann, CC BY-SA 4.0
+<<< nur Verlinkungen, entfällt >>> Links.md: Benjamin Benz (Heise), CC BY-SA 4.0
+<<< nur Verlinkungen, entfällt >>> ct-Sim.md: Benjamin Benz (Heise), CC BY-SA 4.0
+<<< in BeagleBoard.md eingegliedert >>> deprecated/BeagleBoardUbuntu1204Install.md: Timo Sandmann, CC BY-SA 4.0
+<<< teilweise in ct-bot_parts.md eingegliedert >> ct-Bot-Hardware.md: Benjamin Benz (Heise), CC BY-SA 4.0; Ergänzungen und Korrekturen von Timo Sandmann
+<<< in ct-Bot-Hardware.md eingegliedert >> HWErweiterungen.md: Timo Sandmann, CC BY-SA 4.0
