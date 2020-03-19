@@ -1,4 +1,4 @@
-**Da der Maintainer nicht der Autor folgender Inhalte ist, welche dem Projekt ohne Lizenzbestimmungen zur Nutzung überlassen wurden, übernimmt er für diese keine Haftung und handelt nach bestem Wissen und Gewissen. Dieser Artikel ist bis auf Weiteres explizit von den CC-BY-SA Lizenzbestimmungen ausgenommen. Bei rechtlich bedenklichen Inhalten, die trotz Sichtung noch unentdeckt geblieben sind, bittet der Maintainer um eine kurze Benachrichtigung, damit diese umgehend entfernt werden können.**
+**Da der Maintainer nicht der Autor folgender Inhalte ist, welche bereits zuvor als freie Inhalte veröffentlicht worden sind, übernimmt er für diese keine Haftung und handelt gemäß der vorhandenen Lizenzbestimmungen (CC-BY-SA 4.0) für diese Inhalte nach bestem Wissen und Gewissen. Bei rechtlich bedenklichen Inhalten, die trotz Sichtung noch unentdeckt geblieben sind, bittet der Maintainer um eine kurze Benachrichtigung, damit diese umgehend entfernt werden können.**
 
 # Verhalten bot_line_shortest_way
 
@@ -81,3 +81,5 @@ Die angetroffenen Kreuzungen werden also zuerst im Stack eingefügt mit dem Wert
 
 Leider ist zum momentanen Zeitpunkt die [Bot-2-Bot-Kommunikation](../DokuBot2Bot/DokuBot2Bot.md) noch nicht zum Aufruf von Verhalten oder zur Datenübertragung zu anderen Bots verwendbar. Denkbar wäre nämlich die Übertragung des kürzesten Weges, also des Stacks, zu einem anderen Bot. Dieser steht am Ausgangspunkt des ersten Bots und fährt nun direkt auf dem Linienlabyrinth zum Ziel.
 Im Moment ist nur die Erkennung einer X-Kreuzung implementiert, da dann aus jeder Richtung kommend immer beide Abgrundsensoren zuschlagen. Bei einer T-Kreuzung ist dies nicht gegeben und zur sicheren Erkennung einer solchen Kreuzung daher Einiges mehr zu berücksichtigen. Vielleicht wird dies ja später Beachtung finden… ;-)
+
+Autor: Frank Menzel

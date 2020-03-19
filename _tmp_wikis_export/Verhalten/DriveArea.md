@@ -1,4 +1,4 @@
-**Da der Maintainer nicht der Autor folgender Inhalte ist, welche dem Projekt ohne Lizenzbestimmungen zur Nutzung überlassen wurden, übernimmt er für diese keine Haftung und handelt nach bestem Wissen und Gewissen. Dieser Artikel ist bis auf Weiteres explizit von den CC-BY-SA Lizenzbestimmungen ausgenommen. Bei rechtlich bedenklichen Inhalten, die trotz Sichtung noch unentdeckt geblieben sind, bittet der Maintainer um eine kurze Benachrichtigung, damit diese umgehend entfernt werden können.**
+**Da der Maintainer nicht der Autor folgender Inhalte ist, welche bereits zuvor als freie Inhalte veröffentlicht worden sind, übernimmt er für diese keine Haftung und handelt gemäß der vorhandenen Lizenzbestimmungen (CC-BY-SA 4.0) für diese Inhalte nach bestem Wissen und Gewissen. Bei rechtlich bedenklichen Inhalten, die trotz Sichtung noch unentdeckt geblieben sind, bittet der Maintainer um eine kurze Benachrichtigung, damit diese umgehend entfernt werden können.**
 
 # Beschreibung des Verhaltens bot_drive_area
 
@@ -75,3 +75,5 @@ Das vollständige Abfahren der gesamten Fläche von Testlabyrinths zeigen die fo
   Eine Strecke sollte möglichst nicht verworfen werden, weil sich möglicherweise nur durch das Befahren dieser Strecke ein komplettes weiteres Gebiet eröffnet, welches sonst unerforscht bleibt (Türdurchfahrt). Hier kann nach dem Stackholen und Anfahren einer nicht direkt erreichbaren Strecke die Pfadplanung helfen. Aber gerade bei einer noch nicht vollständig kartierten Umgebung kann eine befahrene Strecke plötzlich mit Hindernis versehen sein und hier sollte sich dann eine mögliche Reststrecke auch wieder gemerkt werden.
 
 * Wandfolger zum Anfahren des Startpunktes der nächsten Strecke, da sonst immer kleine Gebiete an der Wand unerforscht stehenbleiben (Treppenabsätze).
+
+Autor: Frank Menzel

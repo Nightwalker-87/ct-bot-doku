@@ -2,67 +2,79 @@
 
 ## Elektronische Bauteile
 
-### Mikrocontroller
+### AVR-Mikrocontroller
 
-'''AVR''' ist eine 8-Bit-RISC-Prozessor-Familie des Halbleiter-Herstellers Microchip.
+'''AVR''' ist eine 8-Bit-RISC-Mikrorozessor-Familie des Halbleiter-Herstellers Microchip.
 Bis zur Übernahme durch Microchip wurde das zugehörige Produktspektrum vom Chip-Hersteller Atmel geführt.
 Ähnlich wie die Produktserie der PIC-Mikrocontroller von Microchip erfreut sich auch die AVR-Familie einer großen Beliebtheit, die auch weit in den Hobby- und semi-professionellen Bereich hinein reicht.
+
 Die AVR-Produktrange unterteilt sich in die folgenden Produktlinien:
 
-* AT90Sx  - "Basic Line", End-of-Life (EOL, obsolet)
-* AT90x   - revisionierte "Basic Line" mit neuerem Kern ausgelegt für CAN-, USB- und PWM-Applikationen
-* ATtiny  - unteres Ende der AVR-Produktpalette, 
-* ATmega  - Hauptlinie der AVR-Produktpalette
-* ATxmega - neueste Generation mit neuem internen Aufbau, nicht kompatibel zur ATtiny und ATmega Produktlinie
+| Produktlinie      | Einführung  | Architektur | Bemerkungen                                        | Status |
+| ---               | ---         | ---         | ---                                                | ---    |
+| AT90Sxxxx         | 1996        | avr         | "Classic Line" (CL)                                | EOL    |
+| ATtiny            | 1996        | avr         | Low-Power/Low-Performance Line                     |        |
+| ATmega            | 1999        | avr         | Hauptlinie                                         |        |
+| AT90yyyxxx        | 2006        | avr         | Revision der CL für CAN-, USB- und PWM-Anwendungen |        |
+| ATxmega           | 2008        | avrxmega    | neuer interner Aufbau, 8/16-bit                    |        |
+| ATtiny 0-/1-Serie | 2018 / 2016 | avrxmega    | 2. Generation der Low-Power/Low-Performance Line   |        |
 
-Die große Beliebtheit der AVRs ergibt sich u.a. aus der einfachen Handhabung.
+EOL: End-of-Life (obsolet)
+
+Hinweis: Die Architekturen avrxmega und avr sind nicht zueinander kompatibel!
+
+Die große Beliebtheit der AVRs ergibt sich u.a. aus ihrer einfachen Handhabung.
 Fast alle Typen können über eine sogenannte ISP-Schnittstelle (AVR ISP) programmiert werden.
+Bei einem solchen In-System Programmer handelt es sich um einen Programmieradapter welcher an die serielle, parallele oder USB-Schnittstelle eines PCs angeschlossen wird.
+Die Besonderheit liegt hierbei in der Möglichkeit, den Mikrocontroller nicht aus der Zielschaltung herausnehmen zu müssen, um ihn zu programmieren.
+Neuere Controller-Typen besitzen darüber hinaus noch eine JTAG-Schnittstelle, über die man den IC-Baustein nach dem IEEE-Standard 1149.1 debuggen kann.
+
+
+### RISC-Architektur
+
+RISC ist eine Abkürzung für ""''R''educed ''I''nstruction ''S''et ''C''omputing" und beschreibt eine Prozessor-Architektur. Übersetzt bedeutet dies in etwa "Rechnen mit reduziertem Befehlssatz". Beispiele für RISC-Prozessoren sind Microchip AVR sowie MIPS.
+Ein Vorteil gegenüber anderen Mikroprozessor-Familien ist, dass sich dank der RISC-Architektur die meisten Befehle auf Registern innerhalb eines Systemtakts abarbeiten lassen, was in einer höhere Rechengeschwindigkeit gegenüber anderen Architekturen resultiert.
+Hiervon ausgenommen sind Sprung- und Multiplikationsbefehle, sowie Zugriffe auf das Speicherinterface (u.a. RAM und I/O-Ports).
+
+Durch das auf Hochsprachen wie C ausgelegte Hardware-Design können auch Compiler sehr effizienten Code erzeugen, sodass man sich hierfür nicht mehr unbedingt auf Assembler-Ebene begeben muss.
+
+
+### Befehlssatz
+
+Im Gegensatz zu den PICmicro-Mikrocontrollern wurde der AVR-Befehlssatz, abgesehen von wenigen Ausnahmen wie beispielsweise dem AT90S1200 mit eingeschränktem und der ATmega-Serie mit erweitertem Befehlssatz, weitestgehend über alle Modelle kompatibel gehalten.
+
+| Modell               | Anzahl der Befehle |
+| ---                  | ---                |
+| AT90S1200            | 52                 |
+| AT90xxxx ("Classic") | 62                 |
+| ATtiny               | bis 123            |
+| ATMega               | 130 - 135          |
+| ATxmega              | ab 142             |
+
+Die AVR-Prozessoren sind für die effiziente Ausführung von kompiliertem C-Code konzipiert worden.
+Um Optimierungspotentiale zu erkennen, wurde noch vor Fertigstellung des AVR-Kerns wurde mit der Entwicklung eines C-Compilers begonnen.
 
 ----
 
-, In-System Programmer) , die über simple Programmieradapter Anschluss an die serielle, parallele oder USB-Schnittstelle eines PCs findet. Die Besonderheit liegt in der Möglichkeit, den Prozessor nicht aus der Zielschaltung herausnehmen zu müssen, um ihn zu programmieren.
-
-Neuere Typen besitzen auch eine JTAG-Schnittstelle, über die man den Mikrocontroller nach dem IEEE-Standard 1149.1 debuggen kann.
-
-Weiterhin existiert eine Vielzahl freier Entwicklungswerkzeuge, wie z.B. die für AVR-Cross-Compiling portierten GNU-Tools.
-
-== RISC-Architektur ==
-
-Eine Prozessor Architektur. RISC ist eine Abkürzung für ''"'''R'''educed '''I'''nstruction '''S'''et '''C'''omputing"''. Übersetzt bedeutet dies etwa Rechnen mit reduziertem Befehlssatz. Beispiele für RISC Prozessoren sind die Atmel AVR-Reihe sowie MIPS.
-
-Ein Vorteil gegenüber anderen Mikroprozessor-Familien ist, dass sich dank der RISC-Architektur die meisten Befehle auf Register innerhalb eines Systemtakts abarbeiten lassen, ausgenommen Sprung- und Multiplikationsbefehle, sowie Zugriffe auf das Speicherinterface (u.a. RAM und I/O-Ports).
-Somit ist diese Architektur sehr schnell im Vergleich zu anderen.
-
-Durch das auf Hochsprachen wie C  ausgelegte Hardware-Design können auch Compiler sehr effizienten Code erzeugen, und man muss sich nicht mehr unbedingt auf Assembler-Ebene begeben.
-
-== Befehlssatz ==
-
-Im Gegensatz zu den PICmicro-Prozessoren wurde der AVR-Befehlssatz über alle Modelle, abgesehen vom AT90S1200 mit eingeschränktem und den ATmega mit erweitertem Befehlssatz kompatibel gehalten.
-
-
-{|
- |-
- ||'''Modell'''            || '''Anzahl der Befehle'''
- |-
- |AT90S1200            || 89
- |-
- |restliche AT90xxxx   || 118
- |-
- |ATMega128            || 133
- |-
- |ATMega168            || 131
- |}
-
-
-Die AVR-Prozessoren sind für die effiziente Ausführung von kompiliertem C-Code gestaltet worden. Noch vor Fertigstellung des AVR-Kerns wurde mit der Entwicklung eines C-Compilers begonnen, um dadurch Optimierungspotential zu erkennen. So wurde die Instruktion "Addition mit direktem Parameter" (''add immediate'') entfernt, denn anstatt dieser Instruktion kann ebenso gut der Befehl "Subtrahiere direkt" (''subtract immediate'') mit dem Komplement verwendet werden. Der dadurch auf dem Silizium frei werdende Platz wurde dann zum Realisieren einer "Addition mit direktem 16-Bit-Parameter" (''add immediate word'') frei. Ein Befehl wie "Vergleich mit Carry-Flag" (''compare with carry'') wurde eingeführt, um einen effizienten Vergleich von 16- und 32-Bit-Werten, wie er in Hochsprachen an der Tagesordnung ist, zu ermöglichen. Anstatt zwei Adressregistern wurden drei Adressregister vorgesehen, und auf ein anfangs geplantes segmentiertes Speicher-Layout wurde komplett verzichtet, weil dieses nur schwer von Compilern zu handhaben ist.
+So wurde die Instruktion "Addition mit direktem Parameter" (''add immediate'') entfernt, denn anstatt dieser Instruktion kann ebenso gut der Befehl "Subtrahiere direkt" (''subtract immediate'') mit dem Komplement verwendet werden.
+Der dadurch auf dem Silizium frei werdende Platz wurde dann zum Realisieren einer "Addition mit direktem 16-Bit-Parameter" (''add immediate word'') frei.
+Ein Befehl wie "Vergleich mit Carry-Flag" (''compare with carry'') wurde eingeführt, um einen effizienten Vergleich von 16- und 32-Bit-Werten, wie er in Hochsprachen an der Tagesordnung ist, zu ermöglichen.
+Anstatt zwei Adressregistern wurden drei Adressregister vorgesehen, und auf ein anfangs geplantes segmentiertes Speicher-Layout wurde komplett verzichtet, weil dieses nur schwer von Compilern zu handhaben ist.
 
 == Speicherarchitektur ==
 
-Das Speicher-Management folgt den Richtlinien der Harvard-Architektur. Es gibt also getrennte Adressräume für den Flash-Speicher, das RAM und das EEPROM. Im Gegensatz zu einfacheren Microkontrollern besitzen die AVRs 32 Register, mit welchen direkt Operationen ausgeführt werden können. Ein umständliches Verschieben von Werten aus dem RAM, um dann mit ihnen Operationen durchführen zu können, entfällt hiermit.
+Das Speicher-Management folgt den Richtlinien der Harvard-Architektur.
+Es gibt also getrennte Adressräume für den Flash-Speicher, das RAM und das EEPROM.
+Im Gegensatz zu einfacheren Microkontrollern besitzen die AVRs 32 Register, mit welchen direkt Operationen ausgeführt werden können.
+Ein umständliches Verschieben von Werten aus dem RAM, um dann mit ihnen Operationen durchführen zu können, entfällt hiermit.
+
+Weiterhin existiert eine Vielzahl freier Entwicklungswerkzeuge, wie z.B. die für AVR-Cross-Compiling portierten GNU-Tools.
+
 
 == Weblinks ==
 
-* [http://mikrocontroller.net/ Sehr ausführliches Tutorial rund um den AVR]
+* [https://www.mikrocontroller.net/articles/AVR Mikrocontroller.net Artikelsammlung - AVR]
+
 * [http://www.nongnu.org/avr-libc/ AVR-Port der C-Standardbibliothek]
 * [http://winavr.sourceforge.net/ GNU C/C++-Cross-Compiler (Windowsversion)]
 * [http://cdk4avr.sourceforge.net/ GNU C/C++-Cross-Compiler (Linuxversion)]
@@ -106,7 +118,6 @@ Die wichtigsten Eigenschaften des ATmega32 im Überblick:
 '''I<sup>2</sup>C''': Ein von Philips entwickelter serieller Kommunikationsbus. I<sup>2</sup>C wird "''I-Quadrat-C''" bzw. "''I-square-C''" ausgesprochen und bedeuted "'''''I'''nter-'''I'''ntegrated '''C'''ircuit''". Der I<sup>2</sup>C Bus ist ein 2-Draht-Bus, d.h. es werden lediglich 2 Prozessor Ports benötigt, SDA (Data) und SCL (Clock). Der  maximale Datentakt beträgt 100kHz im Standard Mode, bzw. 400kHz im Fast Mode. Der AVR unterstützt I<sup>2</sup>C per Hardware durch sein TWI-Interface. TWI bedeutet "'''''T'''wo '''W'''ire '''I'''nterface''" und ist die Bezeichnung von Atmel für I2C.
 
 '''SPI''': Ein von der Firma [http://www.motorola.com Motorola] entwickleter synchroner serieller Bus. SPI ist eine Abkürzung für ''"'''S'''erial '''P'''eripheral '''I'''nterface"''. Es werden mind. 3 Ports benötigt, SDO (Data Out) bzw MOSI, SDI (Data In) bzw. MISO und SCLK (Datentakt) und ggf. ein oder mehrere Chip Select Signale.
-
 
 === Pin Belegung ===
 
@@ -355,6 +366,9 @@ Für den mega644 müssen im Eclipse Projekt die Einstellungen für die Ziel CPU 
 
 [[Bild:gcc-linker-mega644.jpg]]
 
+Autoren: Lomdar67, Marvin
+
+----
 
 ### Feldeffekt-Transistor
 
