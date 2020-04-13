@@ -55,6 +55,7 @@ Die AVR-Prozessoren sind für die effiziente Ausführung von kompiliertem C-Code
 Um Optimierungspotentiale zu erkennen, wurde noch vor Fertigstellung des AVR-Kerns wurde mit der Entwicklung eines C-Compilers begonnen.
 
 ----
+----
 
 So wurde die Instruktion "Addition mit direktem Parameter" (''add immediate'') entfernt, denn anstatt dieser Instruktion kann ebenso gut der Befehl "Subtrahiere direkt" (''subtract immediate'') mit dem Komplement verwendet werden.
 Der dadurch auf dem Silizium frei werdende Platz wurde dann zum Realisieren einer "Addition mit direktem 16-Bit-Parameter" (''add immediate word'') frei.
