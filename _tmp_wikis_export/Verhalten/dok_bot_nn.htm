@@ -476,35 +476,35 @@ div.WordSection1
 <div class=WordSection1>
 
 <p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
-normal'><span style='font-size:14.0pt;line-height:115%'>Neuronales Netz für den
+normal'><span style='font-size:14.0pt;line-height:115%'>Neuronales Netz fï¿½r den
 ct-Bot </span></b><span style='font-size:10.0pt;line-height:115%'>(Frank
 Menzel, 10.05.2015)</span><b style='mso-bidi-font-weight:normal'><span
 style='font-size:14.0pt;line-height:115%'><o:p></o:p></span></b></p>
 
 <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
 style='mso-ansi-language:EN-US'>-<span class=SpellE>behaviour_neuralnet</span>/
-<span class=SpellE>behaviour_drive_neuralnet</span>-<o:p></o:p></span></p>
+<span class=SpellE>behaviour_drive_neuralnet</span>-<o:p></o:p></span><br /><i>Da der Maintainer nicht der Autor folgender Inhalte ist, welche bereits zuvor als freie Inhalte veroeffentlicht worden sind, uebernimmt er fuer diese keine Haftung und handelt gemaess der vorhandenen Lizenzbestimmungen (<b>CC-BY-SA 4.0</b>) fuer diese Inhalte nach bestem Wissen und Gewissen.<br />Bei rechtlich bedenklichen Inhalten, die trotz Sichtung noch unentdeckt geblieben sind, wird um eine kurze Benachrichtigung gebeten, damit diese umgehend entfernt werden koennen.</i></p>
 
 <p class=MsoNormal>Wer sich mit dem Thema Neuronales Netz vertraut gemacht hat,
-wird begeistert über die Möglichkeiten sein, die sich damit eröffnen. Dass
+wird begeistert ï¿½ber die Mï¿½glichkeiten sein, die sich damit erï¿½ffnen. Dass
 allein durch das Anpassen der Gewichtungen der <span class=SpellE>Neuronenverbindungen</span>
-eine Lernfähigkeit entsteht, ist kaum zu glauben. <span
-style='mso-spacerun:yes'> </span>Und um dies überhaupt begreiflich zu machen,
-entstand bei mir die Idee zur Verwendung eines neuronalen Netzes für <span
+eine Lernfï¿½higkeit entsteht, ist kaum zu glauben. <span
+style='mso-spacerun:yes'>ï¿½</span>Und um dies ï¿½berhaupt begreiflich zu machen,
+entstand bei mir die Idee zur Verwendung eines neuronalen Netzes fï¿½r <span
 class=GramE>den ct-Bot</span>.</p>
 
-<p class=MsoNormal>Für <span class=GramE>den</span> Bot habe ich unter Nutzung
-der Library „<b>Lightweight <span class=SpellE>Neural</span> Network“ (http://lwneuralnet.sourceforge.net/)</b>
-ein überwachtes Lernverhalten implementiert, welches bestimmte Ausgaben lernt
+<p class=MsoNormal>Fï¿½r <span class=GramE>den</span> Bot habe ich unter Nutzung
+der Library ï¿½<b>Lightweight <span class=SpellE>Neural</span> Networkï¿½ (http://lwneuralnet.sourceforge.net/)</b>
+ein ï¿½berwachtes Lernverhalten implementiert, welches bestimmte Ausgaben lernt
 an Hand vorgegebener Muster. Ein darauf aufbauendes Fahrverhalten <span
 class=SpellE>behaviour_drive_neuralnet</span> holt sich die Fahrinformationen
 (links Fahren/ geradeaus, Rechts fahren) aus dem gelernten Netz und findet so
-seinen Weg zum Ziel ohne die Wände zu berühren.</p>
+seinen Weg zum Ziel ohne die Wï¿½nde zu berï¿½hren.</p>
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
-normal'>Das NN-Verhalten „<span class=SpellE>behaviour_neuralnet</span>“<o:p></o:p></b></p>
+normal'>Das NN-Verhalten ï¿½<span class=SpellE>behaviour_neuralnet</span>ï¿½<o:p></o:p></b></p>
 
 <p class=MsoNormal>Realisiert sieht es so aus, dass die Richtungen des Bots in
 3 Sektoren eingeteilt wurden und die Richtungsentscheidung, zu welchem Sektor
@@ -543,10 +543,10 @@ src="dok_bot_nn-Dateien/image002.jpg" v:shapes="Grafik_x0020_9"><![endif]></span
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal>Dem Netz werden bereits Input-Output Patterns zum Lernen
-mitgegeben, die experimentell mit dem Test-Labyrinth ermittelt wurden und für
+mitgegeben, die experimentell mit dem Test-Labyrinth ermittelt wurden und fï¿½r
 das Fahrverhalten an den Ecken entscheidend sind. Das Netz wird sofort bei
 Start mit diesen Werten trainiert und der Fehler (je kleiner je besser) <span
-class=GramE>im</span> zugehörigen Screen (wenn entsprechendes <span
+class=GramE>im</span> zugehï¿½rigen Screen (wenn entsprechendes <span
 class=SpellE>Define</span> sitzt) ausgegeben:</p>
 
 <p class=MsoNormal><span style='mso-fareast-language:DE;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -560,14 +560,14 @@ src="dok_bot_nn-Dateien/image003.png" v:shapes="Grafik_x0020_1"><![endif]></span
 
 <p class=MsoNormal>Nach einer maximalen Anzahl Lernschritte wird das Lernen
 beendet. Man kann mittels der Taste 9 das Training weiterlaufen lassen und auch
-die Verringerung des Fehlers wunderschön mitverfolgen. Die Verkleinerung des
-Fehlers bedeutet nichts weiter, als dass sich die Werte für die <span
-class=SpellE>Outputneuronen</span> immer mehr den gewünschten, im Vorgabearray
-festgelegten, Werten zu den vorliegenden Inputpatterns annähern. Es werden also
-diese Situationen gelernt und <span class=GramE>der</span> Bot kann daraus für
-ähnliche Situationen seine richtigen Schlüsse ziehen.<span
-style='mso-spacerun:yes'>  </span>Mittels der Taste 4 wird alles noch einmal
-auf den ungelernten Initialzustand zurückgesetzt und die Gewichtungen mit
+die Verringerung des Fehlers wunderschï¿½n mitverfolgen. Die Verkleinerung des
+Fehlers bedeutet nichts weiter, als dass sich die Werte fï¿½r die <span
+class=SpellE>Outputneuronen</span> immer mehr den gewï¿½nschten, im Vorgabearray
+festgelegten, Werten zu den vorliegenden Inputpatterns annï¿½hern. Es werden also
+diese Situationen gelernt und <span class=GramE>der</span> Bot kann daraus fï¿½r
+ï¿½hnliche Situationen seine richtigen Schlï¿½sse ziehen.<span
+style='mso-spacerun:yes'>ï¿½ </span>Mittels der Taste 4 wird alles noch einmal
+auf den ungelernten Initialzustand zurï¿½ckgesetzt und die Gewichtungen mit
 Zufallswerten belegt. Das Netz ist nun ungelernt, was auch der relativ hohe
 Fehlerwert anzeigt. Mit Train kann man zur Verdeutlichung das Netz wieder
 lernen lassen und auch so mal den bot mit dem Fahrverhalten ungelernt (oder nur
@@ -580,37 +580,37 @@ zu kommen.</p>
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
 <p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
-normal'><u>Das Fahrverhalten „<span class=SpellE>behaviour_drive_neuralnet</span>“<o:p></o:p></u></b></p>
+normal'><u>Das Fahrverhalten ï¿½<span class=SpellE>behaviour_drive_neuralnet</span>ï¿½<o:p></o:p></u></b></p>
 
 <p class=MsoNormal>Der Bot sollte unter Verwendung eines neuronalen Netzes
 seinen Weg durch ein einfaches Labyrinth finden, wobei die
 Richtungsentscheidung nach Links, Rechts oder geradeaus fahren aus dem NN
-genommen wird. <span class=GramE>Der</span> Bot fährt nach Prüfung seiner
-3<span style='mso-spacerun:yes'>  </span>Sektoren (Umgebungscheck) mittels
+genommen wird. <span class=GramE>Der</span> Bot fï¿½hrt nach Prï¿½fung seiner
+3<span style='mso-spacerun:yes'>ï¿½ </span>Sektoren (Umgebungscheck) mittels
 seiner Abstands- und Abgrundsensoren in eine bestimmte Richtung ohne dabei an
-die Wände zu stoßen. Und das Abbiegen an den Ecken, also der Richtungsentscheid
+die Wï¿½nde zu stoï¿½en. Und das Abbiegen an den Ecken, also der Richtungsentscheid
 wurde hierbei gelernt bzw. bereits zum sofortigen Start vorinitialisiert. </p>
 
 <p class=MsoNormal>Praktisch sieht das so aus, dass sich der Bot nach Start des
 Fahrverhaltens zum Check seiner Sektoren zuerst immer nach links dreht, dann
 nach rechts und nun wieder in Fahrtrichtung voraus dreht. Dann wird das Netz
 nach der Richtung befragt und er dreht sich an einer Ecke in die freie Richtung
-bzw. fährt gleich geradeaus. Er fährt bis zu einer Wand nah voraus bzw. maximal
-eine relativ lange Strecke von ca. ½ m. Nun geht das Spiel von vorn los, bis er
-(eher zufällig) auf das grüne <span class=SpellE>Zielfeld</span> trifft. </p>
+bzw. fï¿½hrt gleich geradeaus. Er fï¿½hrt bis zu einer Wand nah voraus bzw. maximal
+eine relativ lange Strecke von ca. ï¿½ m. Nun geht das Spiel von vorn los, bis er
+(eher zufï¿½llig) auf das grï¿½ne <span class=SpellE>Zielfeld</span> trifft. </p>
 
 <p class=MsoNormal>Es muss hierbei gesagt werden, dass keine Zielvorgabe<span
-style='mso-spacerun:yes'>  </span>stattfindet, er also immer nur lokal an den
+style='mso-spacerun:yes'>ï¿½ </span>stattfindet, er also immer nur lokal an den
 Hindernisecken entscheidet, wohin zu fahren ist. Ist also als eine Art <span
-class=SpellE>Wandfolger</span> zu sehen. Für spätere Erweiterungen kann man ja
-eine Zielführung mit den globalen Koordinaten unter Verwendung der Baken
+class=SpellE>Wandfolger</span> zu sehen. Fï¿½r spï¿½tere Erweiterungen kann man ja
+eine Zielfï¿½hrung mit den globalen Koordinaten unter Verwendung der Baken
 andenken (bzw. nur einer Bake als Zielmarkierung). Auch durch die lange gerade
-Strecke, die immer zurückgelegt wird, erfolgt in dieser Zeit (zum ruhigen
-Fahren) auch keine<span style='mso-spacerun:yes'>  </span>NN-Abfrage und damit
-auch keine evtl. anders lautende Richtungsentscheidung. Müsste man für einen <span
+Strecke, die immer zurï¿½ckgelegt wird, erfolgt in dieser Zeit (zum ruhigen
+Fahren) auch keine<span style='mso-spacerun:yes'>ï¿½ </span>NN-Abfrage und damit
+auch keine evtl. anders lautende Richtungsentscheidung. Mï¿½sste man fï¿½r einen <span
 class=SpellE>Linienfolger</span> daher anders andenken.</p>
 
-<p class=MsoNormal>Das Layout „neural_maze_test.xml“ verdeutlicht die Fahrweise
+<p class=MsoNormal>Das Layout ï¿½neural_maze_test.xmlï¿½ verdeutlicht die Fahrweise
 des Bots im Labyrinth:</p>
 
 <p class=MsoNormal><span style='mso-fareast-language:DE;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
@@ -622,11 +622,11 @@ src="dok_bot_nn-Dateien/image005.jpg" v:shapes="Grafik_x0020_7"><![endif]></span
 
 <p class=MsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=MsoNormal>Das Netz wurde als überwachtes Lernverhalten realisiert,
-d.h. es müssen Inputwerte und zugehörige <span class=SpellE>Outputwerte</span>
-(Lernpattern) vorgegeben werden.<span style='mso-spacerun:yes'>  </span>Diese
+<p class=MsoNormal>Das Netz wurde als ï¿½berwachtes Lernverhalten realisiert,
+d.h. es mï¿½ssen Inputwerte und zugehï¿½rige <span class=SpellE>Outputwerte</span>
+(Lernpattern) vorgegeben werden.<span style='mso-spacerun:yes'>ï¿½ </span>Diese
 sind im Initialzustand bereits vorhanden, sind aber <span class=GramE>im</span>
-zugehörigen Screen selbst eingebbar:</p>
+zugehï¿½rigen Screen selbst eingebbar:</p>
 
 <p class=MsoNormal><span style='mso-fareast-language:DE;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
  id="Grafik_x0020_3" o:spid="_x0000_i1026" type="#_x0000_t75" style='width:152.25pt;
@@ -635,28 +635,28 @@ zugehörigen Screen selbst eingebbar:</p>
 </v:shape><![endif]--><![if !vml]><img width=203 height=100
 src="dok_bot_nn-Dateien/image006.png" v:shapes="Grafik_x0020_3"><![endif]></span></p>
 
-<p class=MsoNormal>Mittels Clear kann man die Lernpatterns löschen, der Wert
-für die Anzahl der Lernpatterns (Patt) geht hierbei auf 0 und die Gewichte
+<p class=MsoNormal>Mittels Clear kann man die Lernpatterns lï¿½schen, der Wert
+fï¿½r die Anzahl der Lernpatterns (Patt) geht hierbei auf 0 und die Gewichte
 werden wieder mit Zufallswerten neu belegt. Nun kann man dem Bot die
 verschiedenen Situationen mitgeben, indem man ihn an die entsprechende Stelle
-vor die Wand fährt.<span style='mso-spacerun:yes'>  </span>In dem
-Test-Labyrinth laut Bild drückt man z.B. zum Startzeitpunkt die Taste GO 2. Nun
-checkt er seine Sektoren, dreht sich also und fährt dann nach oben. Diese
+vor die Wand fï¿½hrt.<span style='mso-spacerun:yes'>ï¿½ </span>In dem
+Test-Labyrinth laut Bild drï¿½ckt man z.B. zum Startzeitpunkt die Taste GO 2. Nun
+checkt er seine Sektoren, dreht sich also und fï¿½hrt dann nach oben. Diese
 Situation (Wand links-entsprechende Abstandswerte normalisiert zwischen 0
-(frei) und 1(Wand nah)) und die zugehörige Aktion „Geradeaus Fahren“ sind als
+(frei) und 1(Wand nah)) und die zugehï¿½rige Aktion ï¿½Geradeaus Fahrenï¿½ sind als
 Lernpattern nun gespeichert worden, die <span class=SpellE>PATTernanzahl</span>
-hat sich um 1 erhöht. Nach Ende der fahr fährt man ihn noch etwas näher an die
-Wand oben zur Ecke ran und drückt die „4“ für Rechts und auch dieses
-Lernpattern wird für eine solche Ecke nun gespeichert. Wenn alle Situationen
+hat sich um 1 erhï¿½ht. Nach Ende der fahr fï¿½hrt man ihn noch etwas nï¿½her an die
+Wand oben zur Ecke ran und drï¿½ckt die ï¿½4ï¿½ fï¿½r Rechts und auch dieses
+Lernpattern wird fï¿½r eine solche Ecke nun gespeichert. Wenn alle Situationen
 gelernt sind (Lernpattern begrenzt auf Anzahl der vorinitialisierten
-Lernpatterns), wechselt man in den NN-Screen und lässt dem Netz mittels der
-Taste „9“ diese Situationen lernen, der Fehler verringert sich und das Netz
+Lernpatterns), wechselt man in den NN-Screen und lï¿½sst dem Netz mittels der
+Taste ï¿½9ï¿½ diese Situationen lernen, der Fehler verringert sich und das Netz
 lernt mit kleinerem Fehler immer besser diese Input-Output Patterns, sprich der
-Bot lernt die Abzweigungen an den Ecken.<span style='mso-spacerun:yes'> 
+Bot lernt die Abzweigungen an den Ecken.<span style='mso-spacerun:yes'>ï¿½
 </span></p>
 
 <p class=MsoNormal>Das Fahrverhalten kann in den Screens mit der Taste<span
-style='mso-spacerun:yes'>  </span>„NET Drive: 5“ gestartet bzw. über den
+style='mso-spacerun:yes'>ï¿½ </span>ï¿½NET Drive: 5ï¿½ gestartet bzw. ï¿½ber den
 Verhaltensscreen aktiviert werden.</p>
 
 <p class=MsoNormal><span style='mso-fareast-language:DE;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
